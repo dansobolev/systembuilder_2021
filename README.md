@@ -1,16 +1,16 @@
 # systembuilder_2021
 CI wrapper over github actions. Lanit-Tercom student projects 2021
 
-Task 1:
+<b>Task 1</b>:
 
-$ sudo docker build -t task1-image .
+$ sudo docker build -t task1-image . <br>
 $ sudo docker run task1-image 
 
-Task 2:
+<b>Task 2</b>:
 
-$ sudo docker build -t task2-image . 
+$ sudo docker build -t task2-image . <br>
 $ sudo docker run --name task2 -v PATH_TO_HOST_DIRECTORY:PATH_TO_CONTAINER_VOLUME task2-image
 
-Task 3:
+<b>Task 3</b>:
 
 TO BE CONTINUED
