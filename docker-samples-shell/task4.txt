@@ -1,1 +1,7 @@
+Task: Написать однострочную команду для запуска образа ubuntu 16, которая склонирует репозиторий, адрес которого будет получен из переменной среды 
+$REPO_PATH и в рамках все той-же команды сосчитает количество файлов в репозитории (рекурсивно), выведет на экран его, а также список файлов (циклом).
+
+
+Solution:
+
 sudo docker run -it --rm ubuntu sh -c "apt-get update && apt-get upgrade && apt-get install -y git && git clone https://github.com/dansobolev/systembuilder_2021.git &&  cd systembuilder_2021 && find /systembuilder_2021 -type f| wc -l && ls -l"

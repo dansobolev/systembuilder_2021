@@ -1,1 +1,8 @@
- sudo docker run -it --rm -v "$(pwd)":/data1 alpine sh -c "apk add --update --no-cache python3" && python3 -c "import math; file = open('file.txt', 'w'); file.write(str(math.sqrt(4084441)));"
+Task: Написать однострочную команду для записи в файл результата подсчета выражения квадратного корня из 4084441 в python3 любом образе и
+выгрузки файла из контейнера. Перед подсчетом необходимо импортировать в python3 модуль math, также в рамках этой команды (а также, возможно, установить 
+python3, если он не поставляется в сборке).
+
+
+Solution:
+
+sudo docker run -it --rm -v "$(pwd)":/data1 alpine sh -c "apk add --update --no-cache python3" && python3 -c "import math; file = open('file.txt', 'w'); file.write(str(math.sqrt(4084441)));"

@@ -1,1 +1,6 @@
+Task: Написать однострочную команду для запуска python3 на любом образе на ваш выбор в интерактивном режиме.
+
+
+Solution:
+
 sudo docker run -it alpine sh -c "apk add --update --no-cache python3 && python3"
