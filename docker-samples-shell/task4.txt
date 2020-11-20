@@ -1,0 +1,1 @@
+sudo docker run -it --rm ubuntu sh -c "apt-get update && apt-get upgrade && apt-get install -y git && git clone https://github.com/dansobolev/systembuilder_2021.git &&  cd systembuilder_2021 && find /systembuilder_2021 -type f| wc -l && ls -l"
