@@ -18,8 +18,8 @@ class Parser:
         self.commit_id = None
         self.file = None
 
-        self.chat_id = -414189807  # group
-        # self.chat_id = 417554679  # anton
+        # self.chat_id = -414189807  # group
+        self.chat_id = 444591160  # mine
 
     def get_current_branch(self):
         # get current branch's name
@@ -43,7 +43,7 @@ class Parser:
     def get_status(self):
         try:
             info = self.get_current_branch()
-            self.file = requests.get('https://raw.githubusercontent.com/antonkurenkov/systembuilder_2021/'
+            self.file = requests.get('https://raw.githubusercontent.com/dansobolev/systembuilder_2021/'
                                 f'{info[0]}/status.json')
             return self.file.json()
         except Exception as e:
