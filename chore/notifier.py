@@ -18,8 +18,8 @@ class Parser:
         self.commit_id = None
         self.file = None
 
-        # self.chat_id = -414189807  # group
-        self.chat_id = 444591160  # mine
+        self.chat_id = -414189807  # group
+        # self.chat_id = 444591160  # mine
 
     def get_current_branch(self):
         # get current branch's name
