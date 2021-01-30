@@ -19,7 +19,7 @@ class Parser:
         self.file = None
 
         # self.chat_id = -414189807  # group
-        self.chat_id = 444591160  # my chat id
+        self.chat_id = 444591160  # my id
 
     def get_current_branch(self):
         # get current branch's name
